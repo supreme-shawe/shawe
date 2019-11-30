@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#father{
+    overflow: hidden;
+    font-size: 0;
+    height: 720px;
+    position: relative;
+}
+
+
+#operator{
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background-color: #7b1fa2;
+    display: inline-block;
+    /* box-shadow: plum 1px 1px 3px 3px; */
+}
+
+
+#main-container{
+    position: absolute;
+    width: 1219px;
+    height: 100%;
+    display: inline-block;
+    /* background-color: pink; */
+    left: 300px;
+}
+
+#match-information, #indivisual-information{
+    width: 100%;
+    height: 50px;
+}
+
+#image-match, #image-regist{
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+#text-match, #text-regist{
+    position: absolute;
+    height: 20px;
+    width: 100px;
+    z-index: 100;
+    display: inline-block;
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    top: 65px;
+    margin-left: 30px;
+    z-index: 100;
+}
+
+#text-match{
+    top: 15px;
+}
+
+#match-information:hover, #indivisual-information:hover{
+    background-color: #f06292;
+    cursor: pointer;
+}
+
+
+
+#welcome, #match-container, #information-contaier{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#welcome{
+    display: block;
+    font-size: 200px;
+}
+
+#content{
+    margin-top: 100px;
+    margin-left: 150px;
+    color: cornflowerblue;
+}
+
+
+
+#text{
+    width: 700px;
+    height: 50px;
+    margin-left: 150px;
+    padding-left: 212px;
+    background-color: skyblue;
+    font-size: 30px;
+    color: tomato;
+    padding-top: 10px;
+}
+
+#menu{
+    width: 100%;
+    height: 80px;
+    /* position: absolute; */
+    /* background-color: green; */
+    border: 1px solid wheat;
+    box-shadow: gray 1px 1px 2px 2px;
+    font-size: 20px;
+    left: 300px;
+    font-weight: lighter;
+    display: inline-block;
+}
+
+#image-menu{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+#text-menu{
+    position: absolute;
+    top: 5px;
+}
+
+#logout{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    color: #009688;
+}
+
+#logout:hover{
+    cursor: pointer;
+    color: #d81b60;
+}
+
+#image-menu:hover{
+    cursor: pointer;
+}
+
+#match-container, #information-container{
+    font-size: 10px;
+    width: 100%;
+    height: 640px;
+}
+
+#information-container{
+    font-size: 15px;
+}
+
+.title{
+    font-size: 20px;
+
+}
+
+.input{
+    margin-left: 100px;
+    margin-top: 40px;
+    color: #388e3c;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.input>input {
+    width: 800px;
+    height: 26px;
+}
+
+
+#departments{
+    width: 804px;
+    height: 30px;
+}
+
+#submit, #reset{
+    width: 100px;
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 210px;
+    font-size: large;
+    font-weight: bold;
+    background-color: #3385ff;
+    border: 1px solid #2d78f4;
+    color: #fff;
+}
+
+#reset{
+     margin-left: 50px;
+     width: 70px;
+     padding-left: 30px;
+}
+
+
+#submit:hover, #reset:hover{
+     cursor: pointer;
+     background-color: blue;
+}
+
+#name-inspect, #department-inspect, #major-inspect, #class-inspect, #phone-inspect, #email-inspect{
+    width: 200px;
+    height: 14px;
+    display: inline-block;
+    /* background-color: red; */
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+
+#match-information-container{
+    width: 1150px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 100px;
+    /* background-color: green; */
+    border: 1px solid gray;
+}
+
+#table-head>td{
+    width: 275px;
+    height: 30px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+#article>td{
+    width: 275px;
+    height: 30px;
+    font-size: 10px;
+    text-align: center;
+}
+.table1{
+    margin-left: 25px;
+}
+
+.table4{
+    margin-right: 25px;
+}
+
+@media only screen and (min-width : 1538px){
+    #father{
+        height: 935px;
+    }
+    
+    #operator{
+        width: 400px;
+    }
+
+    #strench{
+        left: 300px;
+    }
+
+    #main-container{
+        left: 400px;
+        width: 1505px;
+    }
+
+    #content,#text{
+        margin-left: 300px;
+    }
+
+    #menu{
+        width: 1505px;
+        left: 300px;
+    }
+
+    /* #logout{
+        right: 500px;
+    } */
+}
