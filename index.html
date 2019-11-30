@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ACM报名系统</title>
+    <link rel="icon" href="../images/acm .ico">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body >
+    <div id="main-container">
+        <div id="brand">
+            <img id="huasacm" src="../images/acm.png">
+            <span id="head-name">湖南文理学院acm报名系统</span>
+        </div>
+        <div id="images-background">
+            <img class="fade" id="image1" src="../images/1.jpg" >
+            <img class="fade" id="image2" src="../images/2.jpg"  >
+            <img class="fade" id="image3"  src="../images/3.jpg"  >
+            <span onclick= "roll(1); stop(1)" class="point1"></span>
+            <span onclick= "roll(2);stop(2)" class="point2"></span>
+            <span onclick= "roll(3);stop(3)" class="point3"></span>
+        </div>
+        <div id="operator">
+            <div id="operator-head">
+                 <div id="font-login" onclick="changecolor(1)">登录</div>
+                 <div id="font-regist" onclick="changecolor(2)">注册</div>
+            </div>
+             <div id="login">
+                 <div id="usernames">
+                     <img id="user-ico" src="../images/user.png" width="25px">
+                     <input id="username" type="text" placeholder="用户名" onkeyup="this.value=this.value.replace(/(^\s+)|(\s+$)/g,'')" onblur="inspectuser()" maxlength="12" onfocus="sureuser()">
+                     <span id="tips1"></span>
+                 </div>
+                 <div id="passwards">
+                    <img id="psd-ico" src="../images/passward.png" width="25px">
+                    <input id="passward" type="password" placeholder="密码" onkeyup="this.value=this.value.replace(/[^\w]/g,'')"  onblur="inspectpsd()" maxlength="18"  onfocus="surepsd()">
+                    <span id="tips2"></span>
+                 </div>
+                <button id="ensure" onclick="ensure()">登录</button>
+             </div>
+             <div id="regist">
+                    <div id = "special">
+                        <span id="name-text">用户名:</span>
+                        <input id="name-input" type="text" maxlength="14" placeholder="用户名6-12位" onkeyup="this.value=this.value.replace(/[^\w]/g,'')" onfocus="registuser()" onblur="inspectionuser()"/>
+                        <span id="name-validation"></span>
+                    </div>
+                    <div>
+                        <span id="psd-text">密码:</span>
+                        <input id="passward-input" type="password" maxlength="18"  placeholder="8-18位数字"  onkeyup="this.value=this.value.replace(/[^\w]/g,'')" onfocus="registpsd()" onblur="inspectionpsd()"/>
+                        <span id="passward-validation"></span>
+                    </div>
+                    <div>
+                        <span id="psd-sure">确认:</span>
+                        <input id="passward2-input" onkeyup="this.value=this.value.replace(/[^\w]/g,'')" type="password" onfocus="registpsd2()" onblur="inspectionpsd2()"/>
+                        <span id="passward2-validation"></span>
+                    </div>
+                    <input id="submit" type="button" value="注册" onclick="submit()">
+             </div>
+        </div>
+    </div>
+    <script src="../js/index.js"></script>
+</body>
+</html>
