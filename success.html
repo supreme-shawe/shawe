@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ACM报名系统</title>
+    <link rel="icon" href="../images/acm .ico">
+    <link rel="stylesheet" href="../css/success.css">
+</head>
+<body>
+    <div id="father">  
+        <div id="operator">
+            <div id="match-information">
+                <img src="../images/电脑1.png" id="image-match" >                
+                <span id="text-match">比赛信息</span>
+            </div>
+            <div id="indivisual-information">
+                    <img src="../images/个人.png" id="image-regist">
+                    <span id="text-regist">个人信息</span>
+            </div>
+        </div>
+        <!-- <div id="strench">
+             <div id="match-change"></div>
+            <div id="regist-change"></div> 
+        </div>     -->
+        <div id="main-container">
+            <div id="menu">
+                <img src="../images/menu.png" id = "image-menu" onclick="widthchange()">
+                <span id = "text-menu">湖南文理学院ACM报名系统</span>
+                <div id ="logout" onclick="logout()">退出</div>
+            </div>
+            <div id="welcome">
+                <div id="content">welcome!</div>
+                <div id="text">tips:请先完善个人信息，再开始操作</div>
+            </div>
+            <div id="match-container">
+                 <div id="match-information-container">
+                      <table id= "table">
+                          <tr id= "table-head">
+                              <td class="table1">比赛地点</td>
+                              <td class="table2">比赛时间</td>
+                              <td class="table3">已报人数/限定人数</td>
+                              <td class="table4">结束时间</td>
+                          </tr>
+                          <tr id="article">
+                              <td class="table1">T3D610</td>
+                              <td class="table2">2019-11-26-14:00</td>
+                              <td class="table3">20 / 100</td>
+                              <td class="table4">2019-11-26-20:00</td>
+                          </tr>
+                      </table>
+                 </div>
+            </div>
+            <div id="information-container">
+                <div class="title"></div>
+                <div class="input">*
+                    <span calss="points">姓名</span>
+                    <input type="text" id="name" placeholder="请输入2-4位汉字姓名" onfocus="nameinput()" onblur="nameinspect()" maxlength="4">
+                    <span id="name-inspect"></span>
+                </div>
+                <div class="input">*
+                    <span>院系</span>
+                       <select name="" id="departments"  onfocus="departmentinput()" onblur="departmentinspect()">
+                           <option value="1">请选择</option>
+                           <option value="2">文史学院</option>
+                           <option value="3">外国语学院</option>
+                           <option value="4">法学院</option>
+                           <option value="5">美术学院</option>
+                           <option value="6">艺术表演与传媒学院</option>
+                           <option value="7">师范学院</option>
+                           <option value="8">数学与计算科学院</option>
+                           <option value="9">化学与材料工程学院</option>
+                           <option value="10">经济与管理</option>
+                           <option value="11">资源环境与旅游</option>
+                           <option value="12">物理与电子科学学院</option>
+                           <option value="13">体育学院</option>
+                           <option value="14">生命与环境科学学院</option>
+                           <option value="15">计算机与科学技术学院</option>
+                           <option value="16">机械工程学院</option>
+                           <option value="17">电气与信息工程学院</option>
+                           <option value="18">土木建筑工程学院</option>
+                           <option value="19">国际学院</option>
+                       </select>
+                    <span id="department-inspect"></span>
+                </div>
+                <div class="input">*
+                    <span calss="points">专业</span>
+                    <input type="text" id="major" placeholder="请输入专业"  onfocus="majorinput()" onblur="majorinspect()" maxlength="12">
+                    <span id="major-inspect"></span>
+                </div>
+                <div class="input">*
+                    <span calss="points">班级</span>
+                    <input type="text" id="class" placeholder="请输入班级"  onfocus="classinput()" onblur="classinspect()" maxlength="5">
+                    <span id="class-inspect"></span>
+                </div>
+                <div class="input">*
+                    <span calss="points">电话</span>
+                    <input type="text" id="phonenumber" placeholder="请输入11位电话号码"  onfocus="phoneinput()" onblur="phoneinspect()">
+                    <span id="phone-inspect"></span>
+                </div>
+                <div class="input">*
+                    <span calss="points">邮箱</span>
+                    <input type="text" id="email" placeholder="请输入邮箱"  onfocus="emailinput()" onblur="emailinspect()">
+                    <span id="email-inspect"></span>
+                </div>
+                <input type="button" id="submit" onclick="submit()" value="提交"></input>
+                <input id="reset" onclick="reset()" value="重置"></input>
+            </div>
+        </div>
+    </div>
+    <script src="../js/success.js"></script>
+</body>
+</html>
